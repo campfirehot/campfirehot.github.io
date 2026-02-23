@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guestbook - Leave a Totally Rad Message</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="guestbook">
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+  <canvas id="starfield"></canvas>
+
+  <header class="hero">
+    <h1 class="glitch" data-text="DENNIS GUESTBOOK">DENNIS GUESTBOOK</h1>
+    <p class="tagline">Sign in and leave a glitter-powered message from your internet soul.</p>
+  </header>
+
+  <nav class="retro-nav">
+    <a href="index.html">Home Base</a>
+    <a href="about-dennis.html">About Dennis</a>
+    <a href="civic-lab.html">Civic Lab</a>
+    <a href="guestbook.html">Guestbook</a>
+    <a href="downloads.html">Downloads</a>
+  </nav>
+
+  <main>
+    <section class="window">
+      <h2>Sign the Book</h2>
+      <form id="guestbookForm" class="guestbook-form">
+        <label>Name <input name="name" required placeholder="CyberAlias9000" /></label>
+        <label>Message <textarea name="message" rows="4" required placeholder="Your ultra cool message..."></textarea></label>
+        <button type="submit">Beam Message</button>
+      </form>
+    </section>
+
+    <section class="window">
+      <h2>Messages</h2>
+      <div id="guestbookEntries" class="entries"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
