@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rev the Civic Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="rev">
+  <canvas id="skyCanvas"></canvas><div class="scanlines"></div>
+  <header class="hero card"><h1 class="glitch" data-text="FULL REV SIMULATOR">FULL REV SIMULATOR</h1><p>Complete page dedicated to revving Dennis's 2001 Honda Civic.</p></header>
+  <nav class="retro-nav card">
+    <a href="index.html">Home</a><a href="about-dennis.html">Dennis Lore</a><a href="civic-lab.html">Civic Lab</a><a href="rev-civic.html">Rev Simulator</a><a href="games.html">Arcade</a><a href="guestbook.html">Message Board</a><a href="downloads.html">Downloads</a>
+  </nav>
+  <main>
+    <section class="card window">
+      <h2>Engine Control Deck</h2>
+      <label>Throttle: <input id="throttle" type="range" min="0" max="100" value="20" /></label>
+      <div class="dashboard rev-grid">
+        <div class="dial"><span id="rpmReadout">1200</span><small>RPM</small></div>
+        <div class="dial"><span id="speedReadout">0</span><small>MPH</small></div>
+        <div class="dial"><span id="gearReadout">N</span><small>GEAR</small></div>
+      </div>
+      <div class="gear-row">
+        <button class="gear" data-gear="1">1</button><button class="gear" data-gear="2">2</button><button class="gear" data-gear="3">3</button><button class="gear" data-gear="4">4</button><button class="gear" data-gear="5">5</button><button class="gear" data-gear="N">N</button>
+      </div>
+      <button id="revButton">REV IT</button>
+      <button id="launchButton">Launch Simulation</button>
+      <div class="rpm-bar-shell"><div id="rpmBar"></div></div>
+    </section>
+
+    <section class="card window">
+      <h2>Civic Cam</h2>
+      <img id="revCarImage" class="civic-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/2001_Honda_Civic_LX_sedan_front.jpg/640px-2001_Honda_Civic_LX_sedan_front.jpg" alt="2001 Honda Civic" />
+      <div id="revLog" class="entries"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

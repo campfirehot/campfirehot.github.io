@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dennis Arcade</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="games">
+  <canvas id="skyCanvas"></canvas><div class="scanlines"></div>
+  <header class="hero card"><h1 class="glitch" data-text="DENNIS ARCADE">DENNIS ARCADE</h1><p>Mini games with maximum nonsense.</p></header>
+  <nav class="retro-nav card">
+    <a href="index.html">Home</a><a href="about-dennis.html">Dennis Lore</a><a href="civic-lab.html">Civic Lab</a><a href="rev-civic.html">Rev Simulator</a><a href="games.html">Arcade</a><a href="guestbook.html">Message Board</a><a href="downloads.html">Downloads</a>
+  </nav>
+  <main>
+    <section class="card window">
+      <h2>Game 1: Catch the Turbo Icon</h2>
+      <p>Score: <span id="gameScore">0</span> | Time: <span id="gameTime">20</span></p>
+      <div id="gameArena" class="game-arena"><button id="target">TURBO</button></div>
+      <button id="startGame">Start Round</button>
+    </section>
+
+    <section class="card window">
+      <h2>Game 2: Civic Trivia Lightning</h2>
+      <p id="triviaQ"></p>
+      <div id="triviaAnswers" class="button-row"></div>
+      <p id="triviaResult"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dennis Message Board</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="guestbook">
+  <canvas id="skyCanvas"></canvas><div class="scanlines"></div>
+  <header class="hero card"><h1 class="glitch" data-text="MESSAGE BOARD">MESSAGE BOARD</h1><p>A complete board with categories, reactions, and local save.</p></header>
+  <nav class="retro-nav card">
+    <a href="index.html">Home</a><a href="about-dennis.html">Dennis Lore</a><a href="civic-lab.html">Civic Lab</a><a href="rev-civic.html">Rev Simulator</a><a href="games.html">Arcade</a><a href="guestbook.html">Message Board</a><a href="downloads.html">Downloads</a>
+  </nav>
+  <main>
+    <section class="card window">
+      <h2>Post New Message</h2>
+      <form id="guestbookForm" class="guestbook-form">
+        <label>Name <input name="name" required /></label>
+        <label>Category
+          <select name="category">
+            <option>General</option><option>Civic Talk</option><option>Arcade Scores</option><option>Web Chaos</option>
+          </select>
+        </label>
+        <label>Message <textarea name="message" rows="3" required></textarea></label>
+        <button type="submit">Post</button>
+      </form>
+    </section>
+
+    <section class="card window">
+      <h2>Board Feed</h2>
+      <div class="button-row">
+        <button data-filter="All" class="filter">All</button>
+        <button data-filter="General" class="filter">General</button>
+        <button data-filter="Civic Talk" class="filter">Civic Talk</button>
+        <button data-filter="Arcade Scores" class="filter">Arcade Scores</button>
+        <button data-filter="Web Chaos" class="filter">Web Chaos</button>
+      </div>
+      <div id="guestbookEntries" class="entries"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

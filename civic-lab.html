@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Civic Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="civic">
+  <canvas id="skyCanvas"></canvas><div class="scanlines"></div>
+  <header class="hero card"><h1 class="glitch" data-text="CIVIC LAB">CIVIC LAB</h1><p>Everything Dennis knows about the 2001 Honda Civic, now with extra flair.</p></header>
+  <nav class="retro-nav card">
+    <a href="index.html">Home</a><a href="about-dennis.html">Dennis Lore</a><a href="civic-lab.html">Civic Lab</a><a href="rev-civic.html">Rev Simulator</a><a href="games.html">Arcade</a><a href="guestbook.html">Message Board</a><a href="downloads.html">Downloads</a>
+  </nav>
+  <main>
+    <section class="card window">
+      <h2>Actual 2001 Honda Civic Photo</h2>
+      <img class="civic-photo pulse-heavy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/2001_Honda_Civic_LX_sedan_front.jpg/640px-2001_Honda_Civic_LX_sedan_front.jpg" alt="2001 Honda Civic sedan front view" />
+      <p class="tiny-note">Source: Wikimedia Commons image link.</p>
+    </section>
+
+    <section class="card window">
+      <h2>Fun Civic Facts Explosion</h2>
+      <ul id="factList" class="mod-list"></ul>
+      <button id="newFactButton">Generate Random Civic Fact</button>
+      <p id="factOutput" class="fact-output"></p>
+    </section>
+
+    <section class="card window">
+      <h2>Why This Car Rules</h2>
+      <p>Reliable, moddable, iconic styling, and perfect for dramatic web storytelling. Dennis gives it a weekly wash and a monthly playlist update.</p>
+      <a class="big-link" href="rev-civic.html">➡ Launch Full Rev Simulator Page</a>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
