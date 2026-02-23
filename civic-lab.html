@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Civic Lab - 2001 Honda Civic Shrine</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="civic">
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+  <canvas id="starfield"></canvas>
+
+  <header class="hero">
+    <h1 class="glitch" data-text="2001 HONDA CIVIC SHINE ZONE">2001 HONDA CIVIC SHINE ZONE</h1>
+    <p class="tagline rainbow-text">A turbo-charged page for Dennis's prized 2001 Honda Civic.</p>
+  </header>
+
+  <nav class="retro-nav">
+    <a href="index.html">Home Base</a>
+    <a href="about-dennis.html">About Dennis</a>
+    <a href="civic-lab.html">Civic Lab</a>
+    <a href="guestbook.html">Guestbook</a>
+    <a href="downloads.html">Downloads</a>
+  </nav>
+
+  <main>
+    <section class="window">
+      <h2>Civic Dashboard</h2>
+      <div class="dashboard">
+        <div class="dial"><span id="rpmReadout">0</span><small>RPM</small></div>
+        <div class="dial"><span id="speedReadout">0</span><small>MPH</small></div>
+        <div class="dial"><span id="bassReadout">0</span><small>BASS</small></div>
+      </div>
+      <button id="revButton">Rev the Civic</button>
+    </section>
+
+    <section class="window">
+      <h2>ASCII Civic Blueprint</h2>
+      <pre class="ascii-car">
+      ______
+  ___/_____|___
+ / _  2001   _ \__
+|_| |_|_|_| |_|__|\____
+  O-----------O
+      </pre>
+      <p>Low profile tires, dramatic sticker kit, and exactly twelve mystery CDs in the glove compartment.</p>
+    </section>
+
+    <section class="window">
+      <h2>Mod List That Keeps Growing</h2>
+      <ul id="modList" class="mod-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
